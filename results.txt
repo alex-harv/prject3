@@ -1,0 +1,24 @@
+Part 1: <insert name of computer here>
+
+	Explain your results (2-3 sentences):
+
+	Calculated threshold:
+
+
+Part 2:
+
+	Secret Array: {2, 2, 2, 2, 2, 2, 2, 2}
+
+
+Part 3:
+
+	Computer 1:
+
+	Computer 2:
+
+	CSE Server:
+
+	VOLE:
+
+	Why were the times different/similar?
+		
