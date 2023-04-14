@@ -30,11 +30,19 @@ void attacker(){
         // receive victim message for complete 1 iteration
         while(*shmem_ptr == 1) sched_yield(); 
         
-        /** TODO: TIME ATTACK **/
+        size_t time = rdtsc();
+        maccess(addr); // attacker measures access time
+        size_t delta = rdtsc() - time;
+        flush(addr);
+
+        /** TODO: UNCOMMENT THE FOLLOWING LINE AND FILL IN THE IF CONDITION **/
+        if (350<delta) result[i] = 1; else result[i] = 0;
 
         *shmem_ptr = 1; //send next signal
     }
-    /** TODO: PRINT RESULTS **/
+    printf("Results:");
+    for (int i = 0; i < 8; i++) { printf("%lu\t", result[i]); }
+    putchar('\n');
 }
 
 /*
@@ -66,6 +74,5 @@ int main(){
     sched_setaffinity(0, sizeof(cpu_set_t), &cpu_mask);
 
     attacker();
-
     return 0;
 }

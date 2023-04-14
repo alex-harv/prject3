@@ -16,7 +16,7 @@
 const long unsigned array[2048];
 
 #define SECRET_SIZE 8
-unsigned known_secret[SECRET_SIZE] = {1, 0, 0, 1, 1, 0, 1, 0};
+unsigned known_secret[SECRET_SIZE] = {1, 0, 1, 0, 1, 1, 1, 1};
 
 // measures and prints timing for determining the threshold
 void probe() {
@@ -51,13 +51,15 @@ void test(int threshold) {
             maccess(addr); // "victim" accesses the data
         }
 
-        /** TODO: MEASURE ACCESS TIMING **/
+        size_t time = rdtsc();
+        maccess(addr); // attacker measures access time
+        size_t delta = rdtsc() - time;
         flush(addr);
 
         /** TODO: UNCOMMENT THE FOLLOWING LINE AND FILL IN THE IF CONDITION **/
-        // if (/* ? */) results[i] = 1;
+        if (threshold>delta) results[i] = 1;
     }
-    printf("Results:\t");
+    printf("Results:");
     for (int i = 0; i < SECRET_SIZE; i++) { printf("%lu\t", results[i]); }
     putchar('\n');
 }

@@ -1,13 +1,14 @@
-Part 1: <insert name of computer here>
+Part 1: <CSEL-W103-54>
 
 	Explain your results (2-3 sentences):
-
-	Calculated threshold:
+	There was alot of variation in the time it would take. Expecially if the first access didnt happen.
+	But by looking at the minimum time for a non-access, you could set a threshold. It was found that while non access times would often be 400-500, the lowest they would usually be seen was 350, while access times did not usually get that high.
+	Calculated threshold: 350
 
 
 Part 2:
 
-	Secret Array: {2, 2, 2, 2, 2, 2, 2, 2}
+	Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
 
 
 Part 3:
