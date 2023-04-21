@@ -19,7 +19,7 @@ Part 3:
 
 	CSE Server:
 
-	VOLE:
+	VOLE: {1, 1, 1, 1, 1, 1, 1, 1}
 
 	Why were the times different/similar?
 		
