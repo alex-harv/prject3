@@ -1,3 +1,6 @@
+//Alex Harvey
+//Matthew Erickson-Cancino
+
 /*
  *  Edit this file to complete part 2. Your x500 should be located in the data.txt file
  *  Your x500 is used to calibrate the victim's secret. After you complete your attacker
