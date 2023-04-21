@@ -17,7 +17,7 @@ Part 3:
 
 	Computer 2: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1262-01-cselabs.umn.edu
 
-	CSE Server:
+	CSE Server: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1260-01-cselabs.umn.edu
 
 	VOLE: {1, 1, 1, 1, 1, 1, 1, 1}
 
