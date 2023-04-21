@@ -13,9 +13,9 @@ Part 2:
 
 Part 3:
 
-	Computer 1: {0, 0, 0, 0, 0, 0, 0, 0}
+	Computer 1: {0, 0, 0, 0, 0, 0, 0, 0} csel-wb28-01.cselabs.umn.edi
 
-	Computer 2:
+	Computer 2: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1262-01-cselabs.umn.edu
 
 	CSE Server:
 
