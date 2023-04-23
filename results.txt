@@ -16,11 +16,11 @@ Part 2:
 
 Part 3:
 
-	Computer 1: {0, 0, 0, 0, 0, 0, 0, 0} csel-wb28-01.cselabs.umn.edi
+	Computer 1: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1260-02 Timing set to 900 (700 to 1100) This computer had very irregular timings. Hard to get a good result. For some reason it looks like when switching from 1 core to 2 core (part 1 to part 2) has hidden the victims accesses. 
 
-	Computer 2: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1262-01-cselabs.umn.edu
+	Computer 2: {1, 1, 1, 1, 1, 1, 1, 1} 
 
-	CSE Server: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1260-01-cselabs.umn.edu
+	CSE Server: {1, 1, 1, 1, 1, 1, 1, 1} 
 
 	VOLE: {1, 1, 1, 1, 1, 1, 1, 1}
 
