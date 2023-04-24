@@ -16,7 +16,7 @@
 #include <sys/mman.h>
 #include "cacheutils.h"
 
-#define THRESHOLD 0 //FILL IN FROM PART 1
+#define THRESHOLD 700 //FILL IN FROM PART 1
 
 /*
  *  Cache side channel attack code.
@@ -31,15 +31,14 @@ void attacker(){
     
     for(int i = 0; i < 8; i++){
         // receive victim message for complete 1 iteration
-        while(*shmem_ptr == 1) sched_yield(); 
-        
-        size_t time = rdtsc();
+	while(*shmem_ptr == 1) sched_yield(); 
+	size_t time = rdtsc();
         maccess(addr); // attacker measures access time
         size_t delta = rdtsc() - time;
-        flush(addr);
-
+	flush(addr);
+        printf("\n%u\n",delta);
         /** TODO: UNCOMMENT THE FOLLOWING LINE AND FILL IN THE IF CONDITION **/
-        if (350<delta) result[i] = 1; else result[i] = 0;
+        if (THRESHOLD<delta) result[i] = 1; else result[i] = 0;
 
         *shmem_ptr = 1; //send next signal
     }
@@ -79,3 +78,4 @@ int main(){
     attacker();
     return 0;
 }
+
