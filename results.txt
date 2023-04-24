@@ -25,6 +25,8 @@ Part 3:
 	VOLE:
 		Timing: 112	263	265	264	89	90	87	266
 		Secret: 1	0	1	0	1	1	1	1
+		
+		{0, 0, 0, 0, 0, 0, 0, 0} csel-plate04 Timing set to 250
 
 	Why were the times different/similar?
 		The caches hit and miss at different speeds, so
