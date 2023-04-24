@@ -5,7 +5,7 @@ Part 1: <CSEL-W103-54>
 
 	Explain your results (2-3 sentences):
 	There was alot of variation in the time it would take. Expecially if the first access didnt happen.
-	But by looking at the minimum time for a non-access, you could set a threshold. It was found that while non access times would often be 400-500, the lowest they would usually be seen was 350, while access times did not usually get that high.
+	But by looking at the minimum time for a non-access, you could set a threshold. It was found that while non access times would often be 400-500, 	 the lowest they would usually be seen was 350, while access times did not usually get that high.
 	Calculated threshold: 350
 
 
@@ -16,18 +16,36 @@ Part 2:
 
 Part 3:
 
-	Computer 1: {0, 1, 0, 1, 1, 1, 1, 1} csel-kh1260-02 Timing set to 1050 
-
-	Computer 2: {0, 1, 0, 1, 1, 1, 1, 1} csel-w103-32 Irregular timings. Set to print all deltas and data extracted from differences between them. 
-
-	CSE Server: {0, 1, 0, 1, 1, 1, 1, 1} csel-plate04 Timing set to 300
-
-	VOLE:
-		Timing: 112	263	265	264	89	90	87	266
-		Secret: 1	0	1	0	1	1	1	1
+	Computer 1: csel-kh1260-02 Timing set to 200
+		Part1:
+			Timing:	129	375	131	343	131	127	345	127	
+			Secret:	1	0	1	0	1	1	0	1
+		Part2:
+			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
 		
-		{0, 0, 0, 0, 0, 0, 0, 0} Timing set to 250
-
+	Computer 2: csel-w103-32 
+		Part1:
+			Timing:	406	864	419	864	406	406	864	406	
+			Secret:	1	0	1	0	1	1	0	1
+		Part2:
+			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
+			
+	CSE Server: csel-plate04 Timing set to 300
+		Part1:
+			Timing:	90	315	300	315	300	315	300	300	
+			Secret:	1	0	1	0	1	1	0	1	
+			Interesting Results. 
+		Part2:
+			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
+			The timings in part2 for this CSE Server was more normal and secret could be found. 
+	VOLE:
+		Part1:
+			Timing: 112	263	265	264	89	90	87	266
+			Secret: 1	0	1	0	1	1	1	1
+		Part2:
+			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
+			
 	Why were the times different/similar?
-		The caches hit and miss at different speeds, so
-		this could explain why the times can be so different/similar.
+		Due to different amounts of server load across similar architectures, 
+		and when across different architectures leads to different memory
+		speeds and behaviour. 
