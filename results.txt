@@ -22,7 +22,10 @@ Part 3:
 
 	CSE Server: {0, 1, 0, 1, 1, 1, 1, 1} csel-plate04 Timing set to 300
 
-	VOLE: {1, 1, 1, 1, 1, 1, 1, 1}
+	VOLE:
+		Timing: 112	263	265	264	89	90	87	266
+		Secret: 1	0	1	0	1	1	1	1
 
 	Why were the times different/similar?
-		
+		The caches hit and miss at different speeds, so
+		this could explain why the times can be so different/similar.
