@@ -16,11 +16,11 @@ Part 2:
 
 Part 3:
 
-	Computer 1: {1, 1, 1, 1, 1, 1, 1, 1} csel-kh1260-02 Timing set to 900 (700 to 1100) This computer had very irregular timings. Hard to get a good result. For some reason it looks like when switching from 1 core to 2 core (part 1 to part 2) has hidden the victims accesses. 
+	Computer 1: {0, 1, 0, 1, 1, 1, 1, 1} csel-kh1260-02 Timing set to 1050 
 
-	Computer 2: {1, 1, 1, 1, 1, 1, 1, 1} 
+	Computer 2: {0, 1, 0, 1, 1, 1, 1, 1} csel-w103-32 Irregular timings. Set to print all deltas and data extracted from differences between them. 
 
-	CSE Server: {1, 1, 1, 1, 1, 1, 1, 1} 
+	CSE Server: {0, 1, 0, 1, 1, 1, 1, 1} csel-plate04 Timing set to 300
 
 	VOLE: {1, 1, 1, 1, 1, 1, 1, 1}
 
