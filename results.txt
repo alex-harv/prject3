@@ -53,3 +53,7 @@ Part 3:
 		Due to different amounts of server load when on same architectures, 
 		and due to different architectures leading to different memory
 		speeds and behaviour.
+		
+		The times are different/similar because of the different amounts of server load on same architectures.
+		These different amounts of server load will lead to different memory speeds (and subsequently different thresholds).
+		The processors for these machines also vary. For example, I believe most of the CSE machines use intel processors.
