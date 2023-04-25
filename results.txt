@@ -10,11 +10,11 @@ Part 1: <CSEL-W103-54>
 	did not usually get that high.
 	
 	Calculated threshold: 350
-
+	This threshold did work, provided that the test was run many times and the most common result was the secret. 
 
 Part 2:
 
-	Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
+	Secret Array: {0, 1, 0, 1, 1, 1, 1, 1} (x592)
 
 
 Part 3:
@@ -26,14 +26,14 @@ Part 3:
 		Part2:
 			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
 		
-	Computer 2: csel-w103-32 
+	Computer 2: csel-w103-32 Timing set to 600
 		Part1:
 			Timing:	406	864	419	864	406	406	864	406	
 			Secret:	1	0	1	0	1	1	0	1
 		Part2:
 			Secret Array: {0, 1, 0, 1, 1, 1, 1, 1}
 			
-	CSE Server: csel-plate04 Timing set to 300
+	CSE Server: csel-plate04 Timing could not be determined from Part1
 		Part1:
 			Timing:	90	315	300	315	300	315	300	300	
 			Secret:	1	0	1	0	1	1	0	1	
