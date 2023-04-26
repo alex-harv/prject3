@@ -1,5 +1,5 @@
 //Alex Harvey
-//Matthew Erickson-Cancino
+//Matthew Erickson-Cancino - eric4644
 
 /*
  *  Edit this file to complete part 2. Your x500 should be located in the data.txt file
