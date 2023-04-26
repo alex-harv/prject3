@@ -35,8 +35,8 @@ void attacker(){
 	size_t time = rdtsc();
         maccess(addr); // attacker measures access time
         size_t delta = rdtsc() - time;
-	flush(addr);
-        printf("\n%u\n",delta);
+	    flush(addr);
+        //printf("\n%u\n",delta);
         /** TODO: UNCOMMENT THE FOLLOWING LINE AND FILL IN THE IF CONDITION **/
         if (THRESHOLD<delta) result[i] = 1; else result[i] = 0;
 
