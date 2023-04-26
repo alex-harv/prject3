@@ -1,5 +1,5 @@
 //Alex Harvey
-//Matthew Erickson-Cancino
+//Matthew Erickson-Cancino - eric4644
 
 /**
  * Minjun Wu, 2021.02.08 Demo for cache side-channel attacks, basic
